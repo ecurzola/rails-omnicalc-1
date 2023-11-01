@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
 
   get("/", {:controller => "operation", :action => "homepage"})
-  get("/square/new", {:controller => "operation", :action => "square"})
-  get("/square/new", {:controller => "operation", :action => "square"})
+  get("/square/new", {:controller => "operation", :action => "homepage"})
   get("/square/result", {:controller => "operation", :action => "square_result"})
   get("/square_root/new", {:controller => "operation", :action => "square_root"})
   get("/square_root/result", {:controller => "operation", :action => "square_root_result"})
